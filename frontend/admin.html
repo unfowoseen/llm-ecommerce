@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="admin-content" style="display: none;">
+        <div class="nav-links">
+            <h1>Admin Dashboard</h1>
+            <a href="index.html">Back to Store</a>
+        </div>
+
+        <div class="grid">
+            <div class="section">
+                <h3>Add New Product</h3>
+                <div class="form-group">
+                    <input type="text" id="new-id" placeholder="Product ID (e.g., p3)">
+                    <input type="text" id="new-name" placeholder="Product Name">
+                    <input type="number" id="new-price" placeholder="Price">
+                    <input type="number" id="new-stock" placeholder="Initial Stock">
+                </div>
+                <button onclick="addProduct()">Add Product</button>
+            </div>
+
+            <div class="section">
+                <h3>Modify Product Stock</h3>
+                <div class="form-group">
+                    <input type="text" id="mod-id" placeholder="Product ID">
+                    <input type="number" id="mod-stock" placeholder="New Stock Level">
+                </div>
+                <button onclick="modifyStock()">Update Stock</button>
+            </div>
+
+            <div class="section">
+                <h3>Modify User Balance</h3>
+                <div class="form-group">
+                    <input type="text" id="user-id" placeholder="User ID">
+                    <input type="number" id="user-balance" placeholder="New Balance">
+                </div>
+                <button onclick="modifyBalance()">Update Balance</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

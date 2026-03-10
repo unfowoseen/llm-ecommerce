@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-view" class="container">
+        <h1>Login</h1>
+        <div class="form-group">
+            <input type="text" id="login-id" placeholder="User ID">
+            <input type="password" id="login-pass" placeholder="Password">
+        </div>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="store-view" class="container hidden">
+        <div class="nav-links">
+            <h2>Balance: $<span id="balance">0.00</span></h2>
+            <div id="admin-link-container" class="hidden">
+                <a href="admin.html">Go to Admin Dashboard</a>
+            </div>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <h1>Storefront</h1>
+        <div id="product-list" class="grid"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
